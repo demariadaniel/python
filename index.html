@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+
+	<!-- CodeMirror -->
+	<script src="node_modules/codemirror/lib/codemirror.js"></script>
+	<script src="node_modules/codemirror/mode/python/python.js"></script>
+
+	<!-- JQuery & Bootstrap -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- PyPyJS -->
+	<script type="text/javascript" src="node_modules/pypyjs/lib/FunctionPromise.js"></script>
+	<script type="text/javascript" src="node_modules/pypyjs/lib/pypyjs.vm.js"></script>
+	<script type="text/javascript" src="node_modules/pypyjs/lib/pypyjs.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container target" style="margin-top: 40px">
+		<script src="app.js"></script>
+	</div>
+
+	<div class="container">
+		<button class="btn btn-default" 
+		id="button" disabled="true" 
+		style="margin-top: 40px">
+			PyPy is Loading
+		</button>
+		
+		<!-- <div><pre><code class='output'></code></pre></div> -->
+
+		<div style="margin-top: 40px">
+		<p>Test Code</p>
+		<pre>
+friends = ['john', 'pat', 'gary', 'michael']
+for i, name in enumerate(friends):
+	print "iteration {iteration} is {name}".format(iteration=i, name=name)
+		</pre>
+		</div>
+
+		<div style="margin-top: 40px">
+			<p>Output</p>
+				<pre class="output"></pre>
+		</div>
+	</div>
+
+</body>
+</html>
